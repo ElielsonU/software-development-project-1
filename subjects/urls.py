@@ -1,6 +1,7 @@
 from django.urls import path
-from django.shortcuts import render
+from . import views
 
 urlpatterns = [
-  path('', lambda req: render(req, 'index.html'))
+  path('', views.index),
+  path('subject/<str:value>/', views.subject),
 ]
