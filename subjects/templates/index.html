@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  
-</style>
-<body>
-  <nav><h1>Blog: IFRN</h1><img src="" alt=""></nav>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <header>
+      <h1>Blog: IFRN</h1>
+      <nav>
+        {% for subject in subjects %}
+          <a href="/subject/{{subject.slug}}">{{subject.name}}</a>
+        {% endfor %}
+      </nav>
+    </header>
+    <footer><span>Por Elielson</span></footer>
+  </body>
 </html>
