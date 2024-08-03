@@ -13,5 +13,5 @@ def subject(req, slug):
   if (not subject.first()): return HttpResponse("Este curso não existe!")
   return render(req, "subject.html", { "subject": subject.first().__dict__})
 
-def tasklist(request):
-  return render(request,'task/list.html')
+def avala(request):
+  return render(request, 'list.html')
