@@ -17,4 +17,4 @@ def avala(request):
   return render(request, 'list.html')
 
 def elielson(request):
-  return render(request, 'list.html')
+  return render(request, 'elielson.html')
