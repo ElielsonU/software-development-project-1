@@ -5,4 +5,5 @@ urlpatterns = [
   path('', views.index),
   path('subject/<slug:slug>/', views.subject),
   path('avala/',views.avala,name='task-list'),
+  path('elielson/',views.elielson),
 ]

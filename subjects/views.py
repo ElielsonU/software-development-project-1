@@ -15,3 +15,6 @@ def subject(req, slug):
 
 def avala(request):
   return render(request, 'list.html')
+
+def elielson(request):
+  return render(request, 'list.html')
